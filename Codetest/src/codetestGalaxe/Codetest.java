@@ -48,7 +48,7 @@ public class Codetest {
 				driver.findElement(By.xpath("//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='header_container']/div[1]/div[3]/a[1]")).click();
 				
 				//assert the no of items 
-				 Dimension qty = driver.findElement(By.xpath("//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='header_container']/div[1]/div[3]/a[1]")).getSize();
+				var qty= driver.findElement(By.xpath("//span[@class='shopping_cart_badge']"));//fixed quantity assertion
 		        //System.out.println(qty);	
 				Assert.assertEquals(2, qty);
 
